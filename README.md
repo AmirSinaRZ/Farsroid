@@ -23,11 +23,16 @@
 - [ ] ذخیره کردن پست
 
 # تصاویر برنامه
-![1](https://s8.uupload.ir/files/screenshot_2023-07-06-04-32-47-337_com.farsroid.android_l9be.jpg)
-![2](https://s8.uupload.ir/files/screenshot_2023-07-06-04-32-56-160_com.farsroid.android_t9ud.jpg)
-![3](https://s8.uupload.ir/files/screenshot_2023-07-06-04-33-06-407_com.farsroid.android_nb4g.jpg)
-![4](https://s8.uupload.ir/files/screenshot_2023-07-06-04-33-21-770_com.farsroid.android_rjgw.jpg)
-![5](https://s8.uupload.ir/files/screenshot_2023-07-06-04-33-30-474_com.farsroid.android_e7u8.jpg)
-![6](https://s8.uupload.ir/files/screenshot_2023-07-06-04-33-35-611_com.farsroid.android_d0zi.jpg)
-![7](https://s8.uupload.ir/files/screenshot_2023-07-06-04-33-50-305_com.farsroid.android_nuo6.jpg)
-![8](https://s8.uupload.ir/files/screenshot_2023-07-06-04-34-01-681_com.farsroid.android_wg3f.jpg)
+<div align="center" style="width:100%;display:flex;justify-content:space-between;">
+<img width="32%" src="https://s8.uupload.ir/files/screenshot_2023-07-06-04-32-47-337_com.farsroid.android_l9be.jpg" align="center" alt="screenshot" />
+<img width="32%" src="https://s8.uupload.ir/files/screenshot_2023-07-06-04-32-56-160_com.farsroid.android_t9ud.jpg" align="center" alt="screenshot" />
+<img width="32%" src="https://s8.uupload.ir/files/screenshot_2023-07-06-04-33-06-407_com.farsroid.android_nb4g.jpg" align="center" alt="screenshot" />
+</div>
+<p> </p>
+<div align="center" style="width:100%;display:flex;justify-content:space-between;">
+<img width="32%" src="https://s8.uupload.ir/files/screenshot_2023-07-06-04-33-21-770_com.farsroid.android_rjgw.jpg" align="center" alt="screenshot" />
+<img width="32%" src="https://s8.uupload.ir/files/screenshot_2023-07-06-04-33-30-474_com.farsroid.android_e7u8.jpg" align="center" alt="screenshot" />
+<img width="32%" src="https://s8.uupload.ir/files/screenshot_2023-07-06-04-33-35-611_com.farsroid.android_d0zi.jpg" align="center" alt="screenshot" />
+<img width="32%" src="https://s8.uupload.ir/files/screenshot_2023-07-06-04-33-50-305_com.farsroid.android_nuo6.jpg" align="center" alt="screenshot" />
+<img width="32%" src="https://s8.uupload.ir/files/screenshot_2023-07-06-04-34-01-681_com.farsroid.android_wg3f.jpg" align="center" alt="screenshot" />
+</div>
