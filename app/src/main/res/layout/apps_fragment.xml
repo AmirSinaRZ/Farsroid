@@ -1,0 +1,67 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/secondToolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:id="@+id/Llin"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<TextView
+				android:id="@+id/dateText"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:text="0000/00/00"
+				android:textSize="16sp"
+				android:textColor="#616161" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/Rlin"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<TextView
+				android:id="@+id/title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:text="00 برنامه منتشر شده امروز"
+				android:textSize="16sp"
+				android:textColor="#616161" />
+		</LinearLayout>
+	</LinearLayout>
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/AppsRecycler"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="5dp"
+		android:visibility="gone" />
+	<LinearLayout
+		android:id="@+id/Loading_lin"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+		<ProgressBar
+			android:id="@+id/progressBar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:indeterminate="true"
+			style="?android:progressBarStyle" />
+	</LinearLayout>
+</LinearLayout>

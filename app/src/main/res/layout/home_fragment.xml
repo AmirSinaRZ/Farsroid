@@ -1,0 +1,257 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/Loading_linear"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="horizontal">
+		<ProgressBar
+			android:id="@+id/progressBar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:indeterminate="true"
+			style="?android:progressBarStyle" />
+	</LinearLayout>
+	<ScrollView
+		android:id="@+id/vScroll"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:id="@+id/home_bg"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:visibility="gone">
+			<com.stx.xhb.androidx.XBanner
+				android:id="@+id/bannerView"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_marginTop="10dp"
+				app:isClipChildrenMode="true"
+				app:pointContainerLeftRightPadding="25dp"
+				app:isAutoPlay="false"
+				app:isHandLoop="true"
+				app:bannerBottomMargin="10dp" />
+			<LinearLayout
+				android:id="@+id/linear_recommended_games"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear_upper_1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/more_1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="8dp"
+						android:text="بیشتر"
+						android:textSize="16sp"
+						android:textColor="#616161" />
+					<LinearLayout
+						android:id="@+id/line_1"
+						android:layout_width="wrap_content"
+						android:layout_height="2dp"
+						android:background="#757575"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/title_text_1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="8dp"
+						android:text="بازی های پیشنهادی"
+						android:textSize="16sp"
+						android:textColor="#4CB920" />
+				</LinearLayout>
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/recommended_gamesRecycler"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear_introduced_games"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear_upper_2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/more_2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="8dp"
+						android:text="بیشتر"
+						android:textSize="16sp"
+						android:textColor="#616161" />
+					<LinearLayout
+						android:id="@+id/line_2"
+						android:layout_width="wrap_content"
+						android:layout_height="2dp"
+						android:background="#757575"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/title_text_2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="8dp"
+						android:text="بازی های رونمایی شده"
+						android:textSize="16sp"
+						android:textColor="#4CB920" />
+				</LinearLayout>
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/introduced_gamesRecycler"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<androidx.cardview.widget.CardView
+				android:id="@+id/adContainer"
+				android:layout_width="wrap_content"
+				android:layout_height="150dp"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginBottom="10dp"
+				android:orientation="vertical"
+				android:layout_gravity="center_horizontal"
+				app:cardElevation="5dp"
+				app:cardCornerRadius="20dp"
+				android:visibility="gone">
+				<ImageView
+					android:id="@+id/adPoster"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:src="@drawable/default_image"
+					android:scaleType="fitCenter" />
+			</androidx.cardview.widget.CardView>
+			<LinearLayout
+				android:id="@+id/linear_recommended_apps"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear_upper_3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/more_3"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="8dp"
+						android:text="بیشتر"
+						android:textSize="16sp"
+						android:textColor="#616161" />
+					<LinearLayout
+						android:id="@+id/line_3"
+						android:layout_width="wrap_content"
+						android:layout_height="2dp"
+						android:background="#757575"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/title_text_3"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="8dp"
+						android:text="برنامه های پیشنهادی"
+						android:textSize="16sp"
+						android:textColor="#4CB920" />
+				</LinearLayout>
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/recommended_appsRecycler"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear_introduced_apps"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear_upper_4"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/more_4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="8dp"
+						android:text="بیشتر"
+						android:textSize="16sp"
+						android:textColor="#616161" />
+					<LinearLayout
+						android:id="@+id/line_4"
+						android:layout_width="wrap_content"
+						android:layout_height="2dp"
+						android:background="#757575"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/title_text_4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="8dp"
+						android:text="برنامه های رونمایی شده"
+						android:textSize="16sp"
+						android:textColor="#4CB920" />
+				</LinearLayout>
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/introduced_appsRecycler"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear_top_companies"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear_upper_5"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:orientation="horizontal">
+					<LinearLayout
+						android:id="@+id/line_5"
+						android:layout_width="wrap_content"
+						android:layout_height="2dp"
+						android:layout_marginLeft="20dp"
+						android:background="#757575"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/title_text_5"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="8dp"
+						android:text="کمپانی های برتر"
+						android:textSize="16sp"
+						android:textColor="#4CB920" />
+				</LinearLayout>
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/top_companiesRecycler"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

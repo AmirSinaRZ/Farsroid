@@ -1,0 +1,48 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/bg"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#4CB920"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical"
+		android:layout_weight="1">
+		<ImageView
+			android:id="@+id/logo"
+			android:layout_width="200dp"
+			android:layout_height="200dp"
+			android:src="@drawable/farsroid_logo"
+			android:scaleType="fitCenter" />
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="8dp"
+			android:gravity="center_horizontal"
+			android:text="فارسـرویـد | دانلود بازی و برنامه اندروید"
+			android:textSize="18sp"
+			android:textColor="#FFFFFF" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/bg2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#4CB920"
+		android:gravity="center_horizontal|bottom"
+		android:orientation="vertical">
+		<com.wang.avi.AVLoadingIndicatorView
+			android:id="@+id/AVview"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="30dp"
+			app:indicatorName="BallBeatIndicator" />
+	</LinearLayout>
+</LinearLayout>

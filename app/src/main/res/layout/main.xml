@@ -1,1 +1,125 @@
-
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/toolbarsHolder"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#4CB920"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/toolbar_more_holder"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginBottom="10dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical">
+				<ImageView
+					android:id="@+id/toolbar_more"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:src="@drawable/ic_more"
+					android:scaleType="fitCenter" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/toolbar_font"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:layout_weight="1">
+				<ImageView
+					android:id="@+id/img_font"
+					android:layout_width="80dp"
+					android:layout_height="40dp"
+					android:layout_marginTop="10dp"
+					android:layout_marginBottom="10dp"
+					android:src="@drawable/farsroid_font"
+					android:scaleType="centerCrop" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/toolbar_search_holder"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginBottom="10dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical">
+				<ImageView
+					android:id="@+id/toolbar_search"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:src="@drawable/ic_search_white"
+					android:scaleType="fitCenter" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/searchBar"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#FFFFFF"
+			android:gravity="right|center_vertical"
+			android:orientation="horizontal"
+			android:visibility="gone">
+			<EditText
+				android:id="@+id/search_input"
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:background="@android:color/transparent"
+				android:gravity="right|center_vertical"
+				android:textSize="16sp"
+				android:textColor="#000000"
+				android:hint="نام برنامه یا بازی مورد نظر را بنویسید"
+				android:textColorHint="#607D8B"
+				android:singleLine="true"
+				android:imeOptions="actionSearch"
+				android:layout_weight="1" />
+			<LinearLayout
+				android:id="@+id/searchIcon_Holder"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginBottom="10dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical">
+				<ImageView
+					android:id="@+id/searchIcon"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:src="@drawable/ic_search_grey"
+					android:scaleType="fitCenter" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<FrameLayout
+		android:id="@+id/frame"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" />
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+		android:id="@+id/bottomNavigation"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		app:itemTextAppearanceActive="@style/BottomNavigationViewTextStyle"
+		app:itemTextAppearanceInactive="@style/BottomNavigationViewTextStyle" />
+</LinearLayout>
