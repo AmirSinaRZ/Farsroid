@@ -208,7 +208,7 @@ public class GamesFragmentActivity extends Fragment {
 		@Override
 		public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 			LayoutInflater _inflater = getActivity().getLayoutInflater();
-			View _v = _inflater.inflate(R.layout.recycler_item, null);
+			View _v = _inflater.inflate(R.layout.recycler_item_vertically, null);
 			RecyclerView.LayoutParams _lp = new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
 			_v.setLayoutParams(_lp);
 			return new ViewHolder(_v);
